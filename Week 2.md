@@ -11,4 +11,5 @@ The colour palette should feel welcoming and friendly to the user, so the colour
 
 ## Typography
 Heading Font: Bodoni Moda
+
 Other Text Font: Montserrat
