@@ -8,6 +8,7 @@ The colour palette should feel welcoming and friendly to the user, so the colour
 | Typing Parts | #CFD2CD |
 | Menu Bar | #E5E6E4 |
 | Buttons | #4C4345, #FBFBF2 |
+| Icons | #4C4345 |
 
 ## Typography
 Heading Font: Bodoni Moda
