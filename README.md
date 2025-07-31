@@ -9,8 +9,10 @@
 
 ## Week 2
 ### Website Design #1
-<img width="824" height="595" alt="Screenshot 2025-07-29 at 12 49 19" src="https://github.com/user-attachments/assets/e82eb27d-b9a2-4cb1-857d-a851029b64ad" />
+<img width="1120" height="838" alt="Screenshot 2025-07-31 at 12 24 16" src="https://github.com/user-attachments/assets/52ad4619-f128-4259-ab8b-b1f3483ecf7d" />
+
 ### Website Wireframe
+<img width="1114" height="830" alt="Screenshot 2025-07-31 at 12 24 25" src="https://github.com/user-attachments/assets/664269b0-8619-4ca3-9a61-8cfecafbf9d9" />
 
 ### UI Features
 | Features | Description |
