@@ -5,6 +5,7 @@
 - Features like the navigation bar should be placed in the same spot on the screen.
 - Spacing and margins should be comfortable to look at, so margins aren't too large or too small.
 - The colour palette aims to make the site seem welcoming, and to further increase the sense of friendliness, all the buttons of the site would have rounded corners.
+- The images should be high quailty.
 
 ## Navigation
 The navigation bar is kept at the bottom of the screen, and the main features of the site can be found there, like the search page, messages page, and profile page. The page for users to add elements to the site is also kept in the navigation bar for easy access.
