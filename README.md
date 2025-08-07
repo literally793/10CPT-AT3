@@ -21,3 +21,8 @@
 | Typography | Montserrat, Bodoni Moda |
 | Hierarchy | Bodoni Moda for titles, Montserrat for other text, italics and bold for emphasis |
 | Navigation | Navigation bar with most of the features located at the bottom of screen |
+
+## Week 3
+### Alternate Website Design
+
+<img width="1023" height="450" alt="Screenshot 2025-08-07 at 13 21 46" src="https://github.com/user-attachments/assets/32fb9ee8-7194-4fe9-96e8-59a1e8328e31" />
