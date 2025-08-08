@@ -3,9 +3,9 @@
 # Documentation
 
 ## Week 1
-- finalised idea
-- wrote a description for the project
-- added the functional and non-functional requirements
+- Finalised idea
+- Wrote a description for the project
+- Added the functional and non-functional requirements
 
 ## Week 2
 ### Website Design #1
@@ -34,3 +34,5 @@
 | Typography | Comfortaa, Rubik |
 | Hierarchy | Comfortaa for titles, Rubik for other text, bold for emphasis |
 | Navigation | Navigation bar with most of the features located at the bottom of screen |
+
+In the alternate design, I changed the typograhpy to one I don't prefer as much, and I experimented with and used significantly different colour choices from my first design. However, I have kept the navigation bar at the bottom of the screen.
