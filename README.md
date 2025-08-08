@@ -27,3 +27,10 @@
 
 <img width="893" height="394" alt="Screenshot 2025-08-07 at 16 46 52" src="https://github.com/user-attachments/assets/d415b5f3-a45d-40cb-bb46-eba58a1c1188" />
 
+### UI Features
+| Features | Description |
+| ----------- | ----------- |
+| Colour Palette | #FFF5E8, #DDE4D8, #416156, #BB8588, #9E7174 |
+| Typography | Comfortaa, Rubik |
+| Hierarchy | Comfortaa for titles, Rubik for other text, bold for emphasis |
+| Navigation | Navigation bar with most of the features located at the bottom of screen |
