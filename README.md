@@ -41,4 +41,5 @@ In the alternate design, I changed the typograhpy to one I don't prefer as much,
 ## Week 4
 ### Flowchart
 The flowchart is of the steps taken by the user when they want to save an image, video, or tutorial.
+
 <img width="1266" height="647" alt="Screenshot 2025-08-14 at 11 37 00" src="https://github.com/user-attachments/assets/a5efe363-bc16-4a9b-9033-e7559e0d78f9" />
