@@ -1,17 +1,34 @@
 
+I AM SO HAPPY IT WORKED IM AMAZING
+
+i'm feeling happy i'm feeling sad
+
+HERE YOU ARE AT THE EDGE, GO AHEAD AND FALL
+GO AHEAD, I INSIST, LOVE STILL CONQUERS ALL
+
+LIFE IS FULL OF CONTRADTIONS
+
+afldkn,adlfkadfkl
+
+## Questions
+1. What data do you want to be stored during the use of your app?
+for login: username, email, first name and last name
+2. What data do you want displayed on your front end?
+show the user's username, email, first name and last name in their profile, and show the file name and tags in files that they have saved, also found in their profile
+3. What data is related to each other?
+the username is required for the files database, as to create customised feeds, it is important to collect the username and the tags on files that they have saved
+4. What data types should be used for elements in your database?
+the data types will mainly consist of image files, text files, and video files
+5. What queries might you need to write (between and across tables) allowing for good information storage and retrieval?
+whats a query
+
+
+
 stuff to do: sql backend for the feed, how images are going to be picked for the user, eg tags
 
 
 notes about your work (think about diary notes), a couple of points about where your are collecting your data from and a list of your SQL queries you are making.
 
-
-In web development, we work with various technologies that allow us to create and style layers responsible for various parts of our solution - think along the lines of "Full Stack" development. For our task this week, we are looking at the fundamental layer - the data layer that everything else is going to be relying on.
-
-what data do you want stored during the use of your app?
-what date you want displayed on your front end?
-what data is related to each other - needing keys set-up for each table
-what data types should for elements be in your database (text, numeric, image etc)
-what queries might you need to write (between and across tables) allowing for good information storage and retrieval
 
 
 a) Set-up your development environment of your web application. Follow through the document below - entitled SET-UP - and make sure all your Extensions in VSCode are installed and running.
