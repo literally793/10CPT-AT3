@@ -11,6 +11,18 @@ LIFE IS FULL OF CONTRADTIONS
 afldkn,adlfkadfkl
 
 ## Questions
+<<<<<<< HEAD
+1. **What data do you want to be stored during the use of your app?**
+for login: username, email, first name and last name
+2. **What data do you want displayed on your front end?**
+show the user's username, email, first name and last name in their profile, and show the file name and tags in files that they have saved, also found in their profile
+3. **What data is related to each other?**
+the username is required for the files database, as to create customised feeds, it is important to collect the username and the tags on files that they have saved
+4. **What data types should be used for elements in your database?**
+the data types will mainly consist of image files, text files, and video files
+5. **What queries might you need to write (between and across tables) allowing for good information storage and retrieval?**
+whats a query
+=======
 1. What data do you want to be stored during the use of your app?
 <br>for login: username, email, first name and last name
 2. What data do you want displayed on your front end?
@@ -21,6 +33,7 @@ afldkn,adlfkadfkl
 <br>the data types will mainly consist of image files, text files, and video files
 5. What queries might you need to write (between and across tables) allowing for good information storage and retrieval?
 <br>whats a query
+>>>>>>> c17633272026928cfb5620d32433b205784c265c
 
 
 
