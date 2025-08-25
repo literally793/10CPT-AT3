@@ -1,6 +1,6 @@
 ## Questions
 1. **What data do you want to be stored during the use of your app?**
-<br>for login: username, email, first name and last name
+<br>for login: username, email, first name and last name, for saving things into folders, username, filename (and file type), date saved, whether it was saved or not, and tags
 2. **What data do you want displayed on your front end?**
 <br>show the user's username, email, first name and last name in their profile, and show the file name and tags in files that they have saved, also found in their profile
 3. **What data is related to each other?**
@@ -10,24 +10,21 @@
 5. **What queries might you need to write (between and across tables) allowing for good information storage and retrieval?**
 <br>whats a query
 
+## Database Structure
+2 tables, one for the user and one for viewed files. The table with users has the username as the primary key, as well as the user's email, and first and last name. The table with the files has an id for each file saved as the primary key, with the username as the foreign key which connects the two tables. It also has the date when the file was viewed, the file name, whether the file was saved or not, and any tags the file has, which can be used to customise the user's feed.
 
-
-stuff to do: sql backend for the feed, how images are going to be picked for the user, eg tags
-
-
-notes about your work (think about diary notes), a couple of points about where your are collecting your data from and a list of your SQL queries you are making.
-
-
-
-a) Set-up your development environment of your web application. Follow through the document below - entitled SET-UP - and make sure all your Extensions in VSCode are installed and running.
-
-b) Create your own database structure - consider table names, data headings, primary keys, foreign keys, types of data stored etc.
-
-c) Create test data to enter into your backend - manually enter some test data to check the structure works and then work on collecting/creating more data to import in Excel or manually.
-
-d) Write a series (5+) of SQL queries to combine and test your data is displaying correctly from your tables - read through SQL Tutorial
-for some ideas - PS. SELECT * FROM "Table" is only a very, very basic Query - create several from across tables showing joins and MEANINGFUL data that a user might find useful.
-
-
-Client: developer presents their database structure and queries to you. Discuss whether you see any problems coming from the table
-setup, the test data or whether the queries are useful or not for front end display (does it make sense and would it work as intended?) Does the developer understand what is needed for back-end to be constructed properly or not? Are you confident they have designed and created a ROBUST backend for your web app?
+## Queries
+### Query 1
+![alt text](<Screenshot 2025-08-24 at 10.09.04.png>)
+This query can be used to see the number of files saved on a certain date.
+### Query 2
+![alt text](<Screenshot 2025-08-24 at 10.29.11.png>)
+This query can be used to show patterns of which file are saved by users.
+### Query 3
+![alt text](<Screenshot 2025-08-24 at 10.30.28.png>)
+This query can be used to show specific tags users have saved.
+### Query 4
+![alt text](<Screenshot 2025-08-24 at 10.31.40.png>)
+The select from query can be used to gather the files which users saved.
+### Query 5
+The between query can be used to find the number of files saved by users during a specific period of time.
