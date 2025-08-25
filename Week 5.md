@@ -1,15 +1,3 @@
-
-I AM SO HAPPY IT WORKED IM AMAZING
-
-i'm feeling happy i'm feeling sad
-
-HERE YOU ARE AT THE EDGE, GO AHEAD AND FALL
-<br>GO AHEAD, I INSIST, LOVE STILL CONQUERS ALL
-
-LIFE IS FULL OF CONTRADTIONS
-
-afldkn,adlfkadfkl
-
 ## Questions
 1. **What data do you want to be stored during the use of your app?**
 <br>for login: username, email, first name and last name
