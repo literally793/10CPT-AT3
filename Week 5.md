@@ -1,4 +1,4 @@
-#Setting up database stuff (SQL)
+# Setting up database stuff (SQL)
 
 ## Questions
 1. **What data do you want to be stored during the use of your app?**
