@@ -14,7 +14,7 @@
 
 ## Database Structure
 2 tables, one for the user and one for viewed files. The table with users has the username as the primary key, as well as the user's email, and first and last name. The table with the files has an id for each file saved as the primary key, with the username as the foreign key which connects the two tables. It also has the date when the file was viewed, the file name, whether the file was saved or not, and any tags the file has, which can be used to customise the user's feed.
-<img width="258" height="408" alt="Screenshot 2025-08-25 at 16 06 26" src="https://github.com/user-attachments/assets/fa6f41ab-9961-440a-9caf-acca6ecbe202" />
+<br><img width="258" height="408" alt="Screenshot 2025-08-25 at 16 06 26" src="https://github.com/user-attachments/assets/fa6f41ab-9961-440a-9caf-acca6ecbe202" />
 
 ## Queries
 Query 1
