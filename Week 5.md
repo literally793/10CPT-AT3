@@ -1,3 +1,5 @@
+#Setting up database stuff (SQL)
+
 ## Questions
 1. **What data do you want to be stored during the use of your app?**
 <br>for login: username, email, first name and last name, for saving things into folders, username, filename (and file type), date saved, whether it was saved or not, and tags
