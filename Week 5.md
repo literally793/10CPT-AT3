@@ -17,14 +17,14 @@
 ### Query 1
 <img width="1313" height="775" alt="Screenshot 2025-08-25 at 14 42 05" src="https://github.com/user-attachments/assets/e5380ddc-818c-4af7-a26d-4fc9d83a5217" />
 This query can be used to see the number of files saved on a certain date.
-<br>###Query 2
+### Query 2
 <img width="1324" height="777" alt="Screenshot 2025-08-25 at 14 42 29" src="https://github.com/user-attachments/assets/eb149853-6a3f-4ccc-84ee-ddbf6af3d6de" />
 This query can be used to show patterns of which file are saved by users.
-<br>###Query 3
+### Query 3
 <img width="1322" height="778" alt="Screenshot 2025-08-25 at 14 42 44" src="https://github.com/user-attachments/assets/d93a3386-9c15-4be2-ba08-1254eda3303b" />
 This query can be used to show specific tags users have saved.
-<br>###Query 4
+### Query 4
 <img width="1327" height="777" alt="Screenshot 2025-08-25 at 14 43 01" src="https://github.com/user-attachments/assets/88b4f39d-7724-4552-a834-3808352ffb5a" />
 The select from query can be used to gather the files which users saved.
-<br>###Query 5
+### Query 5
 The between query can be used to find the number of files saved by users during a specific period of time.
