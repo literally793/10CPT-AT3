@@ -14,17 +14,21 @@
 2 tables, one for the user and one for viewed files. The table with users has the username as the primary key, as well as the user's email, and first and last name. The table with the files has an id for each file saved as the primary key, with the username as the foreign key which connects the two tables. It also has the date when the file was viewed, the file name, whether the file was saved or not, and any tags the file has, which can be used to customise the user's feed.
 
 ## Queries
-### Query 1
+Query 1
 <img width="1313" height="775" alt="Screenshot 2025-08-25 at 14 42 05" src="https://github.com/user-attachments/assets/e5380ddc-818c-4af7-a26d-4fc9d83a5217" />
 This query can be used to see the number of files saved on a certain date.
-### Query 2
+___
+Query 2
 <img width="1324" height="777" alt="Screenshot 2025-08-25 at 14 42 29" src="https://github.com/user-attachments/assets/eb149853-6a3f-4ccc-84ee-ddbf6af3d6de" />
 This query can be used to show patterns of which file are saved by users.
-### Query 3
+___
+Query 3
 <img width="1322" height="778" alt="Screenshot 2025-08-25 at 14 42 44" src="https://github.com/user-attachments/assets/d93a3386-9c15-4be2-ba08-1254eda3303b" />
 This query can be used to show specific tags users have saved.
-### Query 4
+___
+Query 4
 <img width="1327" height="777" alt="Screenshot 2025-08-25 at 14 43 01" src="https://github.com/user-attachments/assets/88b4f39d-7724-4552-a834-3808352ffb5a" />
 The select from query can be used to gather the files which users saved.
-### Query 5
+___
+Query 5
 The between query can be used to find the number of files saved by users during a specific period of time.
