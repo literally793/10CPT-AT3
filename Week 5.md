@@ -10,7 +10,7 @@
 4. **What data types should be used for elements in your database?**
 <br>the data types will mainly consist of image files, text files, and video files
 5. **What queries might you need to write (between and across tables) allowing for good information storage and retrieval?**
-<br>whats a query
+<br>queries to show tags user saved, number of files saved on certain dates
 
 ## Database Structure
 2 tables, one for the user and one for viewed files. The table with users has the username as the primary key, as well as the user's email, and first and last name. The table with the files has an id for each file saved as the primary key, with the username as the foreign key which connects the two tables. It also has the date when the file was viewed, the file name, whether the file was saved or not, and any tags the file has, which can be used to customise the user's feed.
