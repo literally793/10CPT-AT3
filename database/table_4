@@ -1,0 +1,13 @@
+-- database: ./data_source.db
+
+SELECT * FROM "table";
+
+-- create
+CREATE TABLE user (
+    username,
+    email,
+    firstname,
+    lastname
+);
+
+INSERT INTO user(username, email, firstname, lastname) VALUES (username, email, firstname, lastname);

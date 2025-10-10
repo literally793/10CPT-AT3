@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Messages</title>
+</head>
+<body>
+  <header>
+    <img src="static/icons/logo.png" alt="Logo">
+    <title>Messages</title>
+    <nav>
+      <a href="home.html">HOME</a>
+      <a href="messages.html">MESSAGES</a>
+      <a href="profile.html">PROFILE</a>
+      <a href="login.html">SETTINGS</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="wrapper">
+      <div class="container">
+        <div class="left">
+          <div class="top">
+            <input type="text" placeholder="Search">
+          </div>
+          <ul class="people">
+            <li class="person">
+              <span class="name">Emily Gao</span>
+              <span class="preview">6+ new messages since 04:51</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="right">
+          <div class="top">
+            <p>To: <b>Emily Gao</b></p>
+          </div>
+          <div class="chat" id="chatBox">
+            <div class="conversation-start">
+              <span>Today, 04:51</span>
+            </div>
+            <div class="bubble you">我要疯了我要疯了</div>
+            <div class="bubble you">我疯了。</div>
+            <div class="bubble me">我早就疯了！！</div>
+          </div>
+          <div class="write">
+            <input type="text" id="messageInput" placeholder="Type a message...">
+            <button id="sendBtn">Send</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    const sendBtn = document.getElementById('sendBtn');
+    const messageInput = document.getElementById('messageInput');
+    const chatBox = document.getElementById('chatBox');
+
+    function sendMessage() {
+      const text = messageInput.value.trim();
+      if (text !== '') {
+        const bubble = document.createElement('div');
+        bubble.classList.add('bubble', 'me');
+        bubble.textContent = text;
+        chatBox.appendChild(bubble);
+        messageInput.value = '';
+        chatBox.scrollTop = chatBox.scrollHeight; 
+      }
+    }
+
+    sendBtn.addEventListener('click', sendMessage);
+    messageInput.addEventListener('keypress', function(e) {
+      if (e.key === 'Enter') {
+        sendMessage();
+      }
+    });
+  </script>
+</body>
+</html>
