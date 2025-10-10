@@ -1,6 +1,6 @@
 ## Week 10
 
-Continued to add interactive elements. Things can be typed into the entering messages bar, and the things typed in shows up on the actual messages chat, however, it gets removed after refreshing the page. Offline functionality was also successfully implemented.
+Continued to add interactive elements to webpage. Things can be typed into the entering messages bar, and the things typed in shows up on the actual messages chat, however, it gets removed after refreshing the page. Offline functionality was also successfully implemented. I have started to work on the search function, and getting images to show when a key word is entered.
 
 ### Lighthouse Report
 However, the Lighthouse report for the pages with images (home and gallery) had a lower rating than other pages, which is a problem that needs to be addressed and fixed.
