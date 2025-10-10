@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self';" />
+    <link rel="stylesheet" href="static/css/style.css" />
+    <title>Profile</title>
+    <link rel="manifest" href="static/manifest.json" />
+    <link rel="icon" type="image/x-icon" href="static/images/favicon.png" />
+  </head>
+
+  <body>
+    <main>
+      {% include "partials/menuprofile.html" %} {% block content %}{% endblock %}
+    </main>
+    <script src="static/js/app.js"></script>
+  </body>
+</html>
+
+<link rel="stylesheet" href="static/css/style.css" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pinterest-Style User Profile</title>
+<link rel="stylesheet" href="profile.css">
+</head>
+<body>
+
+  <div class="profile-header">
+    <div class="cover-photo"></div>
+    <div class="avatar"></div>
+    <div class="profile-info">
+      <h1>Alice Lai</h1>
+      <p>@a.lice_773</p>
+      <div class="profile-actions">
+        <button>Edit Profile</button>
+        <button>Settings</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="tabs">
+    <button class="active" onclick="showTab('created')">Recently Viewed</button>
+  </div>
+
+  <div class="gallery" id="gallery">
+    <a href="#"><img src="https://picsum.photos/300/400?random=1" alt=""></a>
+    <a href="#"><img src="https://picsum.photos/300/500?random=2" alt=""></a>
+    <a href="#"><img src="https://picsum.photos/300/450?random=3" alt=""></a>
+    <a href="#"><img src="https://picsum.photos/300/600?random=4" alt=""></a>
+    <a href="#"><img src="https://picsum.photos/300/470?random=5" alt=""></a>
+  </div>
+
+<script>
+  const createdImages = [
+    "https://picsum.photos/300/400?random=1",
+    "https://picsum.photos/300/500?random=2",
+    "https://picsum.photos/300/450?random=3",
+    "https://picsum.photos/300/600?random=4",
+    "https://picsum.photos/300/470?random=5"
+  ];
+  const savedImages = [
+    "https://picsum.photos/300/500?random=11",
+    "https://picsum.photos/300/420?random=12",
+    "https://picsum.photos/300/460?random=13",
+    "https://picsum.photos/300/550?random=14",
+    "https://picsum.photos/300/480?random=15"
+  ];
+
+  function showTab(tab) {
+    const gallery = document.getElementById('gallery');
+    gallery.innerHTML = '';
+    let images = tab === 'created' ? createdImages : savedImages;
+    images.forEach(url => {
+      const a = document.createElement('a');
+      a.href = "#";
+      const img = document.createElement('img');
+      img.src = url;
+      a.appendChild(img);
+      gallery.appendChild(a);
+    });
+
+    document.querySelectorAll('.tabs button').forEach(btn => btn.classList.remove('active'));
+    document.querySelector(`.tabs button[onclick="showTab('${tab}')"]`).classList.add('active');
+  }
+</script>
+
+</body>
+</html>
+

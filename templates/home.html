@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self';" />
+    <link rel="stylesheet" href="static/css/style.css" />
+    <title>Home</title>
+    <link rel="manifest" href="static/manifest.json" />
+    <link rel="icon" type="image/x-icon" href="static/images/favicon.png" />
+    <link rel="stylesheet" href="static/css/style.css" />
+
+<style>
+
+  * { box-sizing: border-box; }
+  html, body { min-height: 100%; height: auto; margin: 0; font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; background: #fafafa; }
+
+  header {
+    position: sticky;
+    top: 0;
+    background: #fff;
+    z-index: 20;
+    padding: 12px 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+
+  .gallery {
+    column-count: 4;
+    column-gap: 16px;
+    padding: 16px;
+  }
+
+  .gallery a {
+    display: inline-block;
+    width: 100%;
+    margin: 0 0 16px 0;
+    text-decoration: none;
+    color: inherit;
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  .gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    transition: transform .18s ease, box-shadow .18s ease;
+  }
+
+  .gallery img:hover {
+    transform: translateY(-4px) scale(1.02);
+    cursor: pointer;
+    box-shadow: 0 10px 26px rgba(0,0,0,0.12);
+  }
+
+  @media (max-width: 1200px) { .gallery { column-count: 3; } }
+  @media (max-width: 800px)  { .gallery { column-count: 2; } }
+  @media (max-width: 500px)  { .gallery { column-count: 1; } }
+
+  /* Search bar: inline input + button */
+  #search-form, #search-form * { box-sizing: border-box; }
+
+  #search-form {
+    display: flex !important;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    max-width: 700px;
+    background: #f5f5f5;
+    border-radius: 40px;
+    padding: 6px;
+    margin: 0 auto;
+  }
+
+  /* allow the input to shrink inside a flex container */
+  #search-input {
+    flex: 1 1 auto;
+    min-width: 0;             /* <-- critical so flex child doesn't force wrap */
+    padding: 12px 16px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #222;
+  }
+
+  /* Keep the button on the right, fixed size */
+  #search-form button {
+    flex: 0 0 auto;
+    padding: 10px 18px;
+    border: none;
+    background: #2b82f6;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 28px;
+    cursor: pointer;
+    white-space: nowrap;
+    height: 44px;
+  }
+
+  /* Make button match input height visually */
+  #search-input, #search-form button {
+    height: 44px;
+  }
+
+  #search-form button:hover { background: #1669d8; }
+
+  /* Small-screen adjustments */
+  @media (max-width: 480px) {
+    #search-form { max-width: 95%; padding: 4px; gap: 6px; }
+    #search-form button { padding: 8px 14px; height: 40px; }
+    #search-input { height: 40px; }
+  }
+
+  /* If some other CSS forces the button to be full-width, uncomment the overrides: */
+  /* #search-form button { width: auto !important; display: inline-flex !important; } */
+</style>
+ </head>
+
+  <body>
+    <main>
+        {% include "partials/menuhome.html" %} {% block content %}{% endblock %}
+    </main>
+    
+
+ 
+
+
+<div class="search-container">
+  <form id="search-form" action="#" onsubmit="event.preventDefault();">
+    <input id="search-input" type="text" placeholder="Search..." />
+    <button type="submit" id="search-button">Search</button>
+  </form>
+</div>
+
+
+<div class="gallery" id="gallery">
+  <!-- <a href="https://picsum.photos/id/10/300/420"><img src="https://picsum.photos/id/10/300/420" alt="Image 1" tag="landscape tree"></a>
+  <a href="https://picsum.photos/id/11/300/480"><img src="https://picsum.photos/id/11/300/480" alt="Image 2"></a>
+  <a href="https://picsum.photos/id/12/300/360"><img src="https://picsum.photos/id/12/300/360" alt="Image 3"></a>
+  <a href="https://picsum.photos/id/13/300/520"><img src="https://picsum.photos/id/13/300/520" alt="Image 4"></a>
+  <a href="https://picsum.photos/id/14/300/400"><img src="https://picsum.photos/id/14/300/400" alt="Image 5"></a>
+  <a href="https://picsum.photos/id/15/300/460"><img src="https://picsum.photos/id/15/300/460" alt="Image 6"></a>
+  <a href="https://picsum.photos/id/16/300/380"><img src="https://picsum.photos/id/16/300/380" alt="Image 7"></a>
+  <a href="https://picsum.photos/id/17/300/540"><img src="https://picsum.photos/id/17/300/540" alt="Image 8"></a>
+  <a href="https://picsum.photos/id/18/300/430"><img src="https://picsum.photos/id/18/300/430" alt="Image 9"></a>
+  <a href="https://picsum.photos/id/19/300/500"><img src="https://picsum.photos/id/19/300/500" alt="Image 10"></a>
+  <a href="https://picsum.photos/id/20/300/390"><img src="https://picsum.photos/id/20/300/390" alt="Image 11"></a>
+  <a href="https://picsum.photos/id/21/300/470"><img src="https://picsum.photos/id/21/300/470" alt="Image 12"></a>
+  <a href="https://picsum.photos/id/22/300/350"><img src="https://picsum.photos/id/22/300/350" alt="Image 13"></a>
+  <a href="https://picsum.photos/id/23/300/510"><img src="https://picsum.photos/id/23/300/510" alt="Image 14"></a>
+  <a href="https://picsum.photos/id/24/300/440"><img src="https://picsum.photos/id/24/300/440" alt="Image 15"></a>
+  <a href="https://picsum.photos/id/25/300/530"><img src="https://picsum.photos/id/25/300/530" alt="Image 16"></a>
+  <a href="https://picsum.photos/id/26/300/370"><img src="https://picsum.photos/id/26/300/370" alt="Image 17"></a>
+  <a href="https://picsum.photos/id/27/300/495"><img src="https://picsum.photos/id/27/300/495" alt="Image 18"></a>
+  <a href="https://picsum.photos/id/28/300/410"><img src="https://picsum.photos/id/28/300/410" alt="Image 19"></a>
+  <a href="https://picsum.photos/id/29/300/460"><img src="https://picsum.photos/id/29/300/460" alt="Image 20"></a>
+  <a href="https://picsum.photos/id/30/300/385"><img src="https://picsum.photos/id/30/300/385" alt="Image 21"></a>
+  <a href="https://picsum.photos/id/1015/300/525"><img src="https://picsum.photos/id/1015/300/525" alt="Image 22"></a>
+  <a href="https://picsum.photos/id/32/300/415"><img src="https://picsum.photos/id/32/300/415" alt="Image 23"></a>
+  <a href="https://picsum.photos/id/33/300/485"><img src="https://picsum.photos/id/33/300/485" alt="Image 24"></a>
+  <a href="https://picsum.photos/id/34/300/355"><img src="https://picsum.photos/id/34/300/355" alt="Image 25"></a>
+  <a href="https://picsum.photos/id/35/300/505"><img src="https://picsum.photos/id/35/300/505" alt="Image 26"></a>
+  <a href="https://picsum.photos/id/36/300/425"><img src="https://picsum.photos/id/36/300/425" alt="Image 27"></a>
+  <a href="https://picsum.photos/id/37/300/475"><img src="https://picsum.photos/id/37/300/475" alt="Image 28"></a>
+  <a href="https://picsum.photos/id/38/300/365"><img src="https://picsum.photos/id/38/300/365" alt="Image 29"></a>
+  <a href="https://picsum.photos/id/39/300/545"><img src="https://picsum.photos/id/39/300/545" alt="Image 30"></a> -->
+</div>
+<script src="../static/js/search.js"></script>
+
+</body>
+</html>
+

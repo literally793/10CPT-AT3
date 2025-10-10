@@ -1,0 +1,22 @@
+-- database: ./data_source.db
+
+SELECT * FROM files;
+
+-- create
+CREATE TABLE user (
+  username TEXT PRIMARY KEY,
+  email TEXT NOT NULL UNIQUE,
+  first_name TEXT NOT NULL,
+  last_name TEXT NOT NULL
+);
+
+CREATE TABLE file (
+   save_id INTEGER PRIMARY KEY,
+   username TEXT,
+   date TEXT,
+   file_name TEXT,
+   file_saved TEXT,
+   file_tags TEXT,
+   FOREIGN KEY (username) REFERENCES user(username)
+  
+);
