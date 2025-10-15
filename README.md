@@ -182,7 +182,7 @@ The between query can be used to find the number of files saved by users during 
 
 ## Week 6
 
-Set up the flask and other backend parts of the website, and getting the web server functional.
+Set up the flask and other backend parts of the website, and included getting the web server functional.
 
 ## Week 7
 
@@ -215,10 +215,30 @@ Also did the Google Lighthouse report, which came back as mostly 100 for the pag
 
 ## Week 10
 
-Continued to add interactive elements to webpage. Things can be typed into the entering messages bar, and the things typed in shows up on the actual messages chat, however, it gets removed after refreshing the page. Offline functionality was also successfully implemented. I have started to work on the search function, and getting images to show when a key word is entered. After the search function is complete, things can be typed in, and searched, however there is a bug the first time you search, so you would have to enter the search key word again. Can search for keywords: landscape, tree, mountain, fog, beach, rock, ocean, waterfall, path, plant, grass, green, tree, nature, pencil, laptop, cloud, warm, metal, valley.
+Continued to add interactive elements to webpage. Things can be typed into the entering messages bar, and the things typed in shows up on the actual messages chat, however, it gets removed after refreshing the page. Offline functionality was also successfully implemented. I have started to work on the search function, and getting images to show when a key word is entered.
 
 ### Lighthouse Report
 However, the Lighthouse report for the pages with images (home and gallery) had a lower rating than other pages, which is a problem that needs to be addressed and fixed.
 <img width="1120" height="823" alt="Screenshot 2025-09-25 at 11 39 29" src="https://github.com/user-attachments/assets/96c40863-5f88-461b-9c74-a93ee36b820c" />
 <img width="1110" height="821" alt="Screenshot 2025-09-25 at 11 39 58" src="https://github.com/user-attachments/assets/3104c9fb-ca26-4c1e-bc9e-8868ffd26440" />
 <img width="1120" height="818" alt="Screenshot 2025-09-25 at 11 40 54" src="https://github.com/user-attachments/assets/dd60e08d-f358-40d4-a84f-48d7028ec7d1" />
+
+## Holiday + Week 1 Term 4
+
+In the holidays and the first week of Term 4, I worked on fixing the UI and making it as consistent as I could get it, and making the search bar functional, mainly through javascript. A problem that was encountered there was the search bar entering, and redirected to a 404 page, which was caused by not defining the function perfromSearch properly. Another issue faced was the images not displaying after being searched, which was fixed by making sure the id in ' ' of .getElementById was the same as the other times .getElementById was used.
+
+## Instructions
+1. Download files, and open into VSCode.
+2. Run Flask.
+3. Run python main.py to open the website.
+
+## Notes
+Upon clicking the link to the application, user is redirected to the home page, where there's a gallery with 40 photos. Each of the photos can be clicked on and from there, the user is able to view the image and download it if they want to. 
+<br>
+For the search bar on the home page, it can be used to search for some key words, such as: landscape, tree, mountain, fog, beach, rock, ocean, waterfall, path, plant, grass, green, tree, nature, pencil, laptop, cloud, warm, metal, valley. There are more listed as tags for each of the images in login.py.
+<br>
+However, the search bar has a bug, where the first time you search, it deoesn't work, so you have to search at least two times for the searched images to appear. The home page and the profile page also take a moment to fully load, probably because there are images that have to be loaded in.
+<br>
+For the messages page, scroll to the bottom of the page, where there is a typing bar. Things can be typed into it, and once enter is pressed, the thing that was typed in appears in the chat. However, the entered messages aren't saved, so will be removed upon refresh.
+<br>
+For the login page, details can be entered into the username and password boxes, however, any username and any password can be used, and after entering the details and logging in, the user is directed to the home page.
