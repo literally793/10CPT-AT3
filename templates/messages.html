@@ -3,16 +3,216 @@
 <head>
   <meta charset="UTF-8">
   <title>Messages</title>
+  <style>
+    body {
+      background-color: #E5E6E4;
+      font-family: Arial, sans-serif;
+      margin: 0;
+    }
+  
+    header {
+      background-color: #E5E6E4;
+      padding: 1rem 2rem;
+      border-bottom: 1px solid #ddd;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      gap: 10px;
+      display: flex;
+      align-items: center;
+    }
+
+    .logo img {
+      height: 100px;
+    }
+
+    .logo span {
+      font-family: Arial, sans-serif;
+      font-size: 1.6rem;
+      color: #4C4345;
+      font-weight: bold;
+      letter-spacing: 0.5px;
+    }
+
+    nav a {
+      color: #4C4345;
+      font-weight: 500;
+      text-decoration: none;
+      letter-spacing: 0.5px;
+      margin: 0 1rem;
+    }
+
+    nav a:hover {
+      color: #5E5A5A;
+    }
+
+    .wrapper {
+      display: flex;
+      justify-content: center;
+      padding: 0;
+    }
+
+    .container {
+      display: flex;
+      width: 90%;
+      height: calc(100vh - 60px);
+      background: #fff;
+      border: 1px solid #ddd;
+      border-top: none;
+    }
+
+    /* Left sidebar */
+    .left {
+      width: 25%;
+      border-right: 1px solid #ddd;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .left .top {
+      padding: 1rem;
+      border-bottom: 1px solid #ddd;
+      display: flex;
+      justify-content: center;
+    }
+
+    .left input {
+      width: 90%;
+      padding: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 0.95rem;
+    }
+
+    .people {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      overflow-y: auto;
+      flex-grow: 1;
+    }
+
+    .person {
+      padding: 1rem;
+      border-bottom: 1px solid #eee;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .person:hover {
+      background: #f8f8f8;
+    }
+
+    .name {
+      font-weight: bold;
+      display: block;
+      color: #5E5A5A;
+    }
+
+    .preview {
+      font-size: 0.85rem;
+      color: #4C4345;
+    }
+
+    .right {
+      width: 75%;
+      display: flex;
+      flex-direction: column;
+      background: #fff;
+    }
+
+    .right .top {
+      padding: 1rem;
+      border-bottom: 1px solid #ddd;
+      background: #fff;
+    }
+
+    .chat {
+      flex-grow: 1;
+      padding: 1.5rem 2rem;
+      overflow-y: auto;
+      background: #fff;
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+    }
+
+    .conversation-start {
+      text-align: center;
+      font-size: 0.8rem;
+      color: #999;
+      margin: 0.5rem 0;
+    }
+
+    .bubble {
+      display: inline-block;
+      padding: 0.6rem 1rem;
+      border-radius: 10px;
+      max-width: 60%;
+      word-wrap: break-word;
+      line-height: 1.4;
+    }
+
+    .you {
+      background: #f0f0f0;
+      color: #333;
+      align-self: flex-start;
+    }
+
+    .me {
+      background: #4C4345;
+      color: white;
+      align-self: flex-end;
+    }
+
+    .write {
+      display: flex;
+      align-items: center;
+      padding: 0.8rem 1rem;
+      border-top: 1px solid #ddd;
+      background: #fff;
+    }
+
+    .write input {
+      flex-grow: 1;
+      padding: 0.6rem 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 0.95rem;
+    }
+
+    .write button {
+      background: #4C4345;
+      color: #fff;
+      border: none;
+      padding: 0.6rem 1.2rem;
+      border-radius: 4px;
+      margin-left: 10px;
+      cursor: pointer;
+      font-size: 0.95rem;
+    }
+
+    .write button:hover {
+      background: #5E5A5A;
+    }
+
+  </style>
 </head>
+
 <body>
   <header>
-    <img src="static/icons/logo.png" alt="Logo">
-    <title>Messages</title>
+    <div class="logo">
+      <img src="static/icons/logo.png" alt="Logo">
+      <span>Messages</span>
+    </div>
     <nav>
-      <a href="home.html">HOME</a>
+      <a href="/">HOME</a>
       <a href="messages.html">MESSAGES</a>
       <a href="profile.html">PROFILE</a>
-      <a href="login.html">SETTINGS</a>
+      <a href="login.html">LOGIN</a>
     </nav>
   </header>
 
@@ -25,7 +225,7 @@
           </div>
           <ul class="people">
             <li class="person">
-              <span class="name">Emily Gao</span>
+              <span class="name">User</span>
               <span class="preview">6+ new messages since 04:51</span>
             </li>
           </ul>
@@ -33,7 +233,7 @@
 
         <div class="right">
           <div class="top">
-            <p>To: <b>Emily Gao</b></p>
+            <p>To: <b>User</b></p>
           </div>
           <div class="chat" id="chatBox">
             <div class="conversation-start">
@@ -44,8 +244,8 @@
             <div class="bubble me">我早就疯了！！</div>
           </div>
           <div class="write">
-            <input type="text" id="messageInput" placeholder="Type a message...">
-            <button id="sendBtn">Send</button>
+            <input type="text" id="messageInput" placeholder="message...">
+            <button id="send">Send</button>
           </div>
         </div>
       </div>
@@ -53,7 +253,7 @@
   </main>
 
   <script>
-    const sendBtn = document.getElementById('sendBtn');
+    const send = document.getElementById('send');
     const messageInput = document.getElementById('messageInput');
     const chatBox = document.getElementById('chatBox');
 
@@ -65,15 +265,13 @@
         bubble.textContent = text;
         chatBox.appendChild(bubble);
         messageInput.value = '';
-        chatBox.scrollTop = chatBox.scrollHeight; 
+        chatBox.scrollTop = chatBox.scrollHeight;
       }
     }
 
-    sendBtn.addEventListener('click', sendMessage);
-    messageInput.addEventListener('keypress', function(e) {
-      if (e.key === 'Enter') {
-        sendMessage();
-      }
+    send.addEventListener('click', sendMessage);
+    messageInput.addEventListener('keypress', function (e) {
+      if (e.key === 'Enter') sendMessage();
     });
   </script>
 </body>
