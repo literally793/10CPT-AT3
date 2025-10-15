@@ -233,16 +233,8 @@ In the holidays and the first week of Term 4, I worked on fixing the UI and maki
 3. Run python main.py to open the website.
 
 ## Notes
-Upon clicking the link to the application, user is redirected to the home page, where there's a gallery with 40 photos. Each of the photos can be clicked on and from there, the user is able to view the image and download it if they want to. 
-<br>
-<br>
-For the search bar on the home page, it can be used to search for some key words, such as: landscape, tree, mountain, fog, beach, rock, ocean, waterfall, path, plant, grass, green, tree, nature, pencil, laptop, cloud, warm, metal, valley. There are more listed as tags for each of the images in login.py.
-<br>
-<br>
-However, the search bar has a bug, where the first time you search, it deoesn't work, so you have to search at least two times for the searched images to appear. The home page and the profile page also take a moment to fully load, probably because there are images that have to be loaded in.
-<br>
-<br>
-For the messages page, scroll to the bottom of the page, where there is a typing bar. Things can be typed into it, and once enter is pressed, the thing that was typed in appears in the chat. However, the entered messages aren't saved, so will be removed upon refresh.
-<br>
-<br>
-For the login page, details can be entered into the username and password boxes, however, any username and any password can be used, and after entering the details and logging in, the user is directed to the home page.
+- Upon clicking the link to the application, user is redirected to the home page, where there's a gallery with 40 photos. Each of the photos can be clicked on and from there, the user is able to view the image and download it if they want to. 
+- For the search bar on the home page, it can be used to search for some key words, such as: landscape, tree, mountain, fog, beach, rock, ocean, waterfall, path, plant, grass, green, tree, nature, pencil, laptop, cloud, warm, metal, valley. There are more listed as tags for each of the images in login.py.
+- However, the search bar has a bug, where the first time you search, it deoesn't work, so you have to search at least two times for the searched images to appear. The home page and the profile page also take a moment to fully load, probably because there are images that have to be loaded in.
+- For the messages page, scroll to the bottom of the page, where there is a typing bar. Things can be typed into it, and once enter is pressed, the thing that was typed in appears in the chat. However, the entered messages aren't saved, so will be removed upon refresh.
+- For the login page, details can be entered into the username and password boxes, however, any username and any password can be used, and after entering the details and logging in, the user is directed to the home page.
