@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta http-equiv="Content-Security-Policy" content="script-src 'self';" />
     <link rel="stylesheet" href="static/css/style.css" />
-    <title>Settings</title>
+    <title>Login</title>
     <link rel="manifest" href="static/manifest.json" />
     <link rel="icon" type="image/x-icon" href="static/images/favicon.png" />
   </head>
@@ -16,5 +16,110 @@
       {% include "partials/menulogin.html" %} {% block content %}{% endblock %}
     </main>
     <script src="static/js/app.js"></script>
-  </body>
+
+<!-- <header>
+    <div class="logo">
+      <img src="static/icons/logo.png" alt="Logo">
+      <span>Messages</span>
+    </div>
+    <nav>
+      <a href="/">HOME</a>
+      <a href="messages.html">MESSAGES</a>
+      <a href="profile.html">PROFILE</a>
+      <a href="login.html">SETTINGS</a>
+    </nav>
+  </header> -->
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      width: 2000px;
+      margin: 0;
+    }
+
+    .login-container {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 10px;
+      width: 300px;
+      transform: translate(-50%, -150%);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    input {
+      margin-bottom: 1rem;
+      padding: 0.6rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+
+    button {
+      background-color: #4C4345;
+      color: white;
+      padding: 0.6rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    button:hover {
+      background-color: #5E5A5A;
+    }
+
+    .flash {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    body {
+      background-color: #E5E6E4;
+      font-family: Arial, sans-serif;
+      margin: 0;
+    }
+  
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h2>Login</h2>
+
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% if messages %}
+        {% for category, message in messages %}
+          <div class="flash">{{ message }}</div>
+        {% endfor %}
+      {% endif %}
+    {% endwith %}
+
+    <form method="POST" action="{{ url_for('login') }}">
+      <input type="text" name="username" placeholder="Username" required>
+      <input type="password" name="password" placeholder="Password" required>
+      <button type="submit">Login</button>
+    </form>
+  </div>
+</body>
 </html>
