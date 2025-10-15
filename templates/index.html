@@ -9,25 +9,8 @@
     <title>Home</title>
     <link rel="manifest" href="static/manifest.json" />
     <link rel="icon" type="image/x-icon" href="static/images/favicon.png" />
-  </head>
+    <link rel="stylesheet" href="static/css/style.css" />
 
-  <body>
-    <main>
-        {% include "partials/menuhome.html" %} {% block content %}{% endblock %}
-    </main>
-    <script src="static/js/app.js"></script>
-  </body>
-</html>
-
-<link rel="stylesheet" href="static/css/style.css" />
-
-
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Scrollable Pinterest-style Gallery (clickable)</title>
 <style>
 
   * { box-sizing: border-box; }
@@ -43,7 +26,7 @@
   }
 
   .gallery {
-    column-count: 4; 
+    column-count: 4;
     column-gap: 16px;
     padding: 16px;
   }
@@ -77,19 +60,146 @@
   @media (max-width: 1200px) { .gallery { column-count: 3; } }
   @media (max-width: 800px)  { .gallery { column-count: 2; } }
   @media (max-width: 500px)  { .gallery { column-count: 1; } }
-</style>
-</head>
-<body>
 
-    <div class="search-container">
-    <form action="/search" method="get">
-      <input type="text" id="search-input" name="query" placeholder="Search...">
-      <button type="submit" class="search-button">Search</button>
-    </form>
+  #search-form, #search-form * { box-sizing: border-box; }
+
+  #search-form {
+    display: flex !important;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    max-width: 700px;
+    background: #f5f5f5;
+    border-radius: 40px;
+    padding: 6px;
+    margin: 0 auto;
+  }
+
+  #search-input {
+    flex: 1 1 auto;
+    min-width: 0;
+    padding: 12px 16px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #222;
+  }
+
+  #search-form button {
+    flex: 0 0 auto;
+    padding: 10px 18px;
+    border: none;
+    background: #4C4345;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 20px;
+    cursor: pointer;
+    white-space: nowrap;
+    height: 44px;
+  }
+
+  #search-input, #search-form button {
+    height: 44px;
+  }
+
+  #search-form button:hover { background: #1669d8; }
+
+  @media (max-width: 480px) {
+    #search-form { max-width: 95%; padding: 4px; gap: 6px; }
+    #search-form button { padding: 8px 14px; height: 40px; }
+    #search-input { height: 40px; }
+  }
+
+    body {
+      background-color: #E5E6E4;
+      font-family: Arial, sans-serif;
+      margin: 0;
+    }
+  
+    header {
+      background-color: #E5E6E4;
+      padding: 1rem 2rem;
+      border-bottom: 1px solid #ddd;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      gap: 10px;
+      display: flex;
+      align-items: center;
+    }
+
+    .logo img {
+      height: 100px;
+    }
+
+    .logo span {
+      font-family: Arial, sans-serif;
+      font-size: 1.6rem;
+      color: #4C4345;
+      font-weight: bold;
+      letter-spacing: 0.5px;
+    }
+
+    nav a {
+      color: #4C4345;
+      font-weight: 500;
+      text-decoration: none;
+      letter-spacing: 0.5px;
+      margin: 0 1rem;
+    }
+
+    nav a:hover {
+      color: #007bff;
+    }
+
+    .wrapper {
+      display: flex;
+      justify-content: center;
+      padding: 0;
+    }
+
+    .container {
+      display: flex;
+      width: 90%;
+      height: calc(100vh - 70px);
+      background: #fff;
+      border: 1px solid #ddd;
+      border-top: none;
+    }
+
+</style>
+ </head>
+
+  <body>
+    <!-- <main>
+        {% include "partials/menu.html" %} {% block content %}{% endblock %}
+    </main> -->
+    <header>
+    <div class="logo">
+      <img src="static/icons/logo.png" alt="Logo">
+      <span>Home</span>
     </div>
+    <nav>
+      <a href="/">HOME</a>
+      <a href="messages.html">MESSAGES</a>
+      <a href="profile.html">PROFILE</a>
+      <a href="login.html">LOGIN</a>
+    </nav>
+  </header>
+
+<div class="search-container">
+  <form id="search-form" action="#" onsubmit="event.preventDefault();">
+    <input id="search-input" type="text" placeholder="Search..." />
+    <button type="button" id="search-button">Search</button>
+  </form>
+</div>
 
 <div class="gallery" id="gallery">
-  <a href="https://picsum.photos/id/10/300/420"><img src="https://picsum.photos/id/10/300/420" alt="Image 1"></a>
+  <!-- <a href="https://picsum.photos/id/10/300/420"><img src="https://picsum.photos/id/10/300/420" alt="Image 1" tag="landscape tree"></a>
   <a href="https://picsum.photos/id/11/300/480"><img src="https://picsum.photos/id/11/300/480" alt="Image 2"></a>
   <a href="https://picsum.photos/id/12/300/360"><img src="https://picsum.photos/id/12/300/360" alt="Image 3"></a>
   <a href="https://picsum.photos/id/13/300/520"><img src="https://picsum.photos/id/13/300/520" alt="Image 4"></a>
@@ -118,7 +228,10 @@
   <a href="https://picsum.photos/id/36/300/425"><img src="https://picsum.photos/id/36/300/425" alt="Image 27"></a>
   <a href="https://picsum.photos/id/37/300/475"><img src="https://picsum.photos/id/37/300/475" alt="Image 28"></a>
   <a href="https://picsum.photos/id/38/300/365"><img src="https://picsum.photos/id/38/300/365" alt="Image 29"></a>
-  <a href="https://picsum.photos/id/39/300/545"><img src="https://picsum.photos/id/39/300/545" alt="Image 30"></a>
+  <a href="https://picsum.photos/id/39/300/545"><img src="https://picsum.photos/id/39/300/545" alt="Image 30"></a> -->
 </div>
+<script src="../static/js/search.js"></script>
+
 </body>
 </html>
+
