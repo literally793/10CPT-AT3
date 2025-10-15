@@ -36,7 +36,7 @@ const searchButton = document.getElementById('search-button');
 const imageGallery = document.getElementById('gallery');
 
 function displayImages(filteredImages) {
-    imageGallery.innerHTML = ''; // Clear previous images
+    imageGallery.innerHTML = '';
     filteredImages.forEach(image => {
         // const div = document.createElement('div');
         // div.classList.add('image-item');
