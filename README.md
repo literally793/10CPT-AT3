@@ -215,7 +215,7 @@ Also did the Google Lighthouse report, which came back as mostly 100 for the pag
 
 ## Week 10
 
-Continued to add interactive elements to webpage. Things can be typed into the entering messages bar, and the things typed in shows up on the actual messages chat, however, it gets removed after refreshing the page. Offline functionality was also successfully implemented. I have started to work on the search function, and getting images to show when a key word is entered.
+Continued to add interactive elements to webpage. Things can be typed into the entering messages bar, and the things typed in shows up on the actual messages chat, however, it gets removed after refreshing the page. Offline functionality was also successfully implemented. I have started to work on the search function, and getting images to show when a key word is entered. After the search function is complete, things can be typed in, and searched, however there is a bug the first time you search, so you would have to enter the search key word again. Can search for keywords: landscape, tree, mountain, fog, beach, rock, ocean, waterfall, path, plant, grass, green, tree, nature, pencil, laptop, cloud, warm, metal, valley.
 
 ### Lighthouse Report
 However, the Lighthouse report for the pages with images (home and gallery) had a lower rating than other pages, which is a problem that needs to be addressed and fixed.
