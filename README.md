@@ -64,19 +64,39 @@ Other Text Font: Montserrat
 <img width="1114" height="830" alt="Screenshot 2025-07-31 at 12 24 25" src="https://github.com/user-attachments/assets/664269b0-8619-4ca3-9a61-8cfecafbf9d9" />
 
 ## Week 3
+## Navigation
+The navigation bar is still located at the bottom of the screen like the other design, because most phone apps have it at the bottom. However, the icons have changed to be more simple, and the add button has been made larger because it leads to more functions, like creating a folder, instead of just adding images / tutorials / images to the database.
+
+## Hierarchy
+To differentiate the hierarchy, the font for the heading is Comfortaa, the font for other text is Rubik, and certain text is bold. In my design, I made the headings of each page (like log in, search, profile) in the font Comfortaa, and everthing else in Rubik. For dms page, the name of the user is in bold Rubik, and the preview of the conversation is unbolded Rubik, because the name of the user is more important than the contents of the conversation.
+
+## Colour Palette
+To maintain a sense of friendliness to the user, the main colours are a pastel green, which is a cool colour, but makes up for it by being soft and light. There is a darker green for contrast. The other set of colours used are a light pink for less important buttons, like the folders in the profile page, and the darker colour to contrast this is a darker shade of pink.
+
+<img width="1437" height="514" alt="Screenshot 2025-08-07 at 09 58 34" src="https://github.com/user-attachments/assets/de54016d-aaa4-4681-8de2-abe588c9bd32" />
+
+| Section | Colour |
+| ----------- | ----------- |
+| Font | #30463E, #9E7174, #BB8588 |
+| Background | #DDE4D8 |
+| Button 1 | #416156, #FFF5E8 |
+| Button 2 and search bar | #BB8588, #FFF5E8 |
+| Menu Bar | #DDE4D8 |
+| Icons | #30463E |
+
+## Typography
+In my alterate design, I changed the fonts to something different, that I wouldn't normally use, but still keeping the fonts simple and easy to read.
+
+Heading Font: Comfortaa
+
+Other Text Font: Rubik
+
+## Comparing
+The main changes I made in my alternate design is keeping the icons and the design more simple, with less complicated and smaller icons, as well as having shadows, like the one from the navigation bar. I also changed the colour palette 
+
 ### Alternate Website Design
 
 <img width="893" height="394" alt="Screenshot 2025-08-07 at 16 46 52" src="https://github.com/user-attachments/assets/d415b5f3-a45d-40cb-bb46-eba58a1c1188" />
-
-### UI Features
-| Features | Description |
-| ----------- | ----------- |
-| Colour Palette | #FFF5E8, #DDE4D8, #416156, #BB8588, #9E7174 |
-| Typography | Comfortaa, Rubik |
-| Hierarchy | Comfortaa for titles, Rubik for other text, bold for emphasis |
-| Navigation | Navigation bar with most of the features located at the bottom of screen |
-
-In the alternate design, I changed the typograhpy to one I don't prefer as much, and I experimented with and used significantly different colour choices from my first design. However, I have kept the navigation bar at the bottom of the screen.
 
 ## Week 4
 ### Flowchart
