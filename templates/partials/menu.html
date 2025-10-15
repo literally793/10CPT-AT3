@@ -2,7 +2,7 @@
     <img src="static\icons\logo.png" alt="Artboard logo." />
     <h1>Artboard</h1>
     <ul class="topnav">
-      <li><a href="home.html">Home</a></li>
+      <li><a href="/">Home</a></li>
       <li><a href="messages.html">Messages</a></li>
       <li><a href="profile.html">Profile</a></li>
       <li><a href="login.html">Settings</a></li>
@@ -12,3 +12,60 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap" rel="stylesheet">
+
+<style>
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #E5E6E4;
+  font-family: "Arial";
+  font-size: 1rem;
+}
+
+main {
+  max-width: 900px;
+  margin: auto;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav img {
+    height: 100px;
+    transform: translate(-560%, 0)
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  nav li {
+    margin-right: 1rem;
+  }
+  
+  nav ul li a {
+    text-decoration-line: none;
+    text-transform: uppercase;
+    transform: translate(00%, 0)
+  }
+  
+  nav ul li a:hover {
+    color: #14e6dd;
+  }
+  
+  nav h1 {
+    color: #4C4345;
+    margin-bottom: 0.5rem;
+    transform: translate(-850%, 20%)
+  }
+</style>
